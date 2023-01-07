@@ -1,4 +1,4 @@
-# Build project "Responsive cards"
+# Build project "[Responsive cards](https://github.com/alunka/frontend/tree/main/December/responsive-cards)"
 
 ```bash
 npm i && gulp
