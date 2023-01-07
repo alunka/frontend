@@ -1,0 +1,77 @@
+// #Змінні
+$font-color: #fff;
+$fz: 40px;
+$textdecoration: underline;
+$border-radis: 9px;
+
+
+$backgroung-transparent-colors: (
+    1: linear-gradient(34deg, rgba(187, 12, 181, 0.3379726890756303) 35%, rgba(255, 0, 234, 1) 100%), // Las vegas
+    2: linear-gradient(34deg, rgba(12, 151, 187, 0.3379726890756303) 35%, rgba(21, 185, 133, 1) 100%), // New york
+    3: linear-gradient(34deg, rgba(225, 188, 23, 0.32396708683473385) 35%, rgba(141, 185, 21, 1) 100%), // Singapore
+);
+
+h1 {
+    color: $font-color;
+    font-size: $fz;
+    text-decoration: none;
+    text-align: center;
+}
+
+div {
+    .card {
+        height: 400px;
+        width: 300px;
+        margin: 15px;
+        border-radius: $border-radis;
+        display: inline-block;
+    }
+
+    .inner_card {
+        height: 100%;
+    }
+
+    .main_div {
+        width: 100 vw;
+    }
+
+    @for $i from 1 through 3 {
+        .card_#{$i} {
+            background-image: url('../img/#{$i}.jpg');
+            box-shadow: 5px 5px 5px #171616ae;
+        }
+
+         .inner_card_#{$i} {
+            border-radius: $border-radis;
+         }
+    }
+
+    .inner_card_text {
+        background-color: #141313;
+        border-radius: 0 0 9px 9px;
+        height: 40%;
+        p {
+            color: $font-color;
+            padding: 10px;
+            font-size: small;
+        }
+    }
+
+    .inner_card_up {
+        height: 60%;
+    }
+
+    @each $i, $color in $backgroung-transparent-colors {
+        .inner_card_#{$i} {
+            background: $color;
+        }
+    }
+
+    .city {
+        text-align: right;
+        padding: 15px;
+        color: $font-color;
+        font-weight: bold;
+        font-size: larger;
+    }
+}
