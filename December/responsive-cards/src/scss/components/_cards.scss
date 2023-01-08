@@ -50,6 +50,7 @@ div {
         background-color: #141313;
         border-radius: 0 0 9px 9px;
         height: 40%;
+        clip-path: polygon(0% 23%, 100.1% 0%, 100.1% 100.1%, 0% 100.1%);
         p {
             color: $font-color;
             padding: 10px;
