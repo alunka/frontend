@@ -1,0 +1,118 @@
+$border-radius: 20px;
+$button-size: 64px;
+
+div {
+    .calculator wrapper {
+        padding: 30px;
+        width: 100vw;
+    }
+
+    .calculator {
+        margin: 15px;
+        height: 568px;
+        width: 320px;
+        border-radius: $border-radius;
+        display: inline-block;
+    }
+
+    .calculator-light {
+        background-color: #FAFAFA;;
+    }
+    
+    .calculator-dark {
+        background-color: #00223A;;
+    }
+
+    .panel {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        height: 44px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .pannel-inner {
+        display: inline-block;
+    }
+
+    .pannel-right {
+        text-align: right;
+    }
+
+    .panel-light {
+        background-color: #fff;
+    }
+
+    .panel-dark {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .screen {
+        height: 156px;
+        font-size: 30px;
+    }
+
+    .calculator-buttons {
+        height: 368px;
+        border-radius: $border-radius;
+        display: grid;
+        grid-template-columns: $button-size $button-size $button-size $button-size;
+        padding: 30px;
+        font-family: 'Aeonik-Regular' sans-serif;
+    }
+
+    .cl-button {
+        height: $button-size;
+        width: $button-size;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .calculator-buttons-light {
+        background-color: #E9F6FF;
+    }
+
+    .calculator-buttons-dark {
+        background-color: #001B2F;
+        color: #fff;
+    }
+
+    .blue-button {
+        color: #00B0D7;
+    }
+
+    .panel-right {
+        position: relative;
+        left: 230px;
+        top: -20px;
+    }
+
+    .data {
+        position: relative;
+    }
+
+    .result {
+        font-size: 45px;
+        top: 0;
+        left: 210px;
+    }
+
+    .data1 {
+        top: 70px;
+        left: 190px;
+    }
+
+    .data2 {
+        top: 35px;
+        left: 230px;
+    }
+
+    .data3 {
+        top: 2px;
+        left: 253px;
+    }
+}
