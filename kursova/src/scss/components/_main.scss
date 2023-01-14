@@ -1,0 +1,20 @@
+.main-header {
+    background: url('../img/background.png') no-repeat center top;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 720px;
+    nav {
+        color: #fff;
+
+        a {
+            color: #fff !important;
+        }
+
+        #home_button {
+            font-weight: bold;
+        }
+    }
+}
