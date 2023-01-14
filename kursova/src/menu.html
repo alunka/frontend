@@ -2,7 +2,7 @@
     <div onclick="location.href='/'" class="nav-item logo">
         travelaja
     </div>
-    <div class="nav-item">
+    <div class="nav-item menu-items">
         <a id="home_button" href="/">Home</a>
         <a id="discover_button" href="/discover.html">Discover</a>
         <a id="services_button" href="/services.html">Services</a>
@@ -10,9 +10,20 @@
         <a id="about_us_button" href="/about-us.html">About Us</a>
         <a id="contacts_button" href="/contacts.html">Contact</a>
     </div>
-     <div class="nav-item button-location">
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/321/321267.png"
-        alt="UA Flag" height="30">&nbsp;&nbsp;&#8964;
+    <div class="nav-item menu-items-collapsed" onclick="document.getElementById('collapsed_menu').style.display = 'block';">
+        &equiv;
+    </div>
+    <div class="nav-item button-location">
+        <img onclick="this.src = this.src.substring(this.src.lastIndexOf('/') + 1) === 'ua.svg' ? '/img/gb.svg' : '/img/ua.svg';"
+        src="/img/ua.svg" alt="UA Flag" height="15">&nbsp;
     </div>
 </nav>
+
+<div class="collapsed-menu" id="collapsed_menu" onclick="this.style.display = 'none';">
+    <a href="/">Home</a><br><br>
+    <a href="/discover.html">Discover</a><br><br>
+    <a href="/services.html">Services</a><br><br>
+    <a href="/news.html">News</a><br><br>
+    <a href="/about-us.html">About Us</a><br><br>
+    <a href="/contacts.html">Contact</a>
+</div>

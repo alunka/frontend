@@ -1,14 +1,42 @@
 footer {
     width: 100%;
-    height: 200px;
-    margin-top: 7px;
-    background-color: #43B97F;
+    background-color: #295943;
     font-family: 'Poppins';
+    padding: 20px;
 
     .container-footer {
         width: 100%;
-        padding: 10px;
-        text-align: center;
         color: #fff;
+
+        .logo {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33.18px;
+            line-height: 120%;
+            cursor: pointer;
+        }
+
+        .footer-line-grid {
+            width: 100%;
+            .footer-line-items {
+                width: 300px;
+                text-align: left;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 30px;
+                div {
+                    margin: 5px;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .up-line-footer-item {
+                    margin-bottom: 20px;
+                }
+             }
+        }
     }
 }
