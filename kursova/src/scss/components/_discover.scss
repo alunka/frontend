@@ -1,11 +1,56 @@
 .discover-header {
     width: 100%;
-    min-height: 150px;
+    min-height: 54px;
 
     nav {
         #discover_button {
             font-weight: bold;
             color: #43B97F !important;
+        }
+    }
+}
+
+.discover-header-block {
+    background: url('../img/discover.jpg')no-repeat center top;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 33.18px;
+    line-height: 120%;
+    color: #fff;
+    text-shadow: 2px 2px #3D3E48;
+    position: relative;
+}
+
+.map-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 15px;
+
+    @media screen and (min-width: 0px) and (max-width: 768px) {
+        & {
+            grid-template-columns: 100%;
+        }
+    }
+
+    .map-text {
+        padding: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        &::first-letter {
+            font-weight: 700;
+            font-size: 68px;
+            line-height: 120%;
+            padding: 4px 3px;
+            margin-right: 5px;
+            float: left;
         }
     }
 }

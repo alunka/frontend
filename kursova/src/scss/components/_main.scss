@@ -50,5 +50,94 @@
             box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
             border-radius: 8px;
         }
+
+        @media screen and (min-width: 0px) and (max-width: 768px) {
+        .search-item {
+            display: none;
+        }
+        }
     }
 }
+
+.main-page-content {
+    padding: 15px;
+    display: flex;
+    @media screen and (min-width: 0px) and (max-width: 1023px) {
+        & {
+            flex-wrap: wrap;
+        }
+
+        .image-main-content {
+            display: none;
+        }
+    }
+}
+
+.card-main-block {
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+
+    @media screen and (min-width: 0px) and (max-width: 600px) {
+        & {
+            grid-template-columns: 100%;
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 812px) {
+        & {
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    .cards-block {
+        width: 100%;
+        padding: 15px;
+
+        .cards-block-inner {
+            border-radius: 10px;
+            box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        .cards-block-inner-low {
+            border-radius: 0;
+        }
+
+        .inner-block {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .card-block-bordered {
+        height: 370px;
+    }
+
+    .card-block-low {
+       height: 220px;
+    }
+
+    .photo-name {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 65px;
+        padding: 7px;
+        div {
+            padding: 10px;
+            color: #3D3E48;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 120%;
+        }
+    }
+}
+
+        @for $i from 1 through 6 {
+            .card-#{$i} {
+                background: url('../img/land#{$i}.png') center;
+                height: 70%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 10px;
+                background-origin: content-box;
+            }
+        }
